@@ -1,0 +1,1315 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+	Smaller width media query subracts 1px so that styles in both
+	larger and smaller mixins apply at the actual width. 
+*/
+/*
+	Code pulled from 4moms production site
+*/
+@font-face {
+  font-family: Century Gothic;
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix");
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix") format("embedded-opentype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.woff?v=3303207414467143655") format("woff"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.ttf?5272") format("truetype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Century Gothic;
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix");
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix") format("embedded-opentype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.woff?v=3303207414467143655") format("woff"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.ttf?5272") format("truetype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: Century Gothic;
+    src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+  }
+}
+@font-face {
+  font-family: Century Gothic;
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.eot?v=14242691890273458005?#iefix");
+  src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.eot?v=14242691890273458005?#iefix") format("embedded-opentype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.woff?v=8467630639151127471") format("woff"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.ttf?5272") format("truetype"), url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.svg?v=3788222985331504714#GOTHICB") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: Century Gothic;
+    src: url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.svg?v=3788222985331504714#GOTHICB") format("svg");
+  }
+}
+.ul-unstyled {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.image-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+body {
+  font-family: Century Gothic;
+  color: #636363;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #222222;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+}
+@media only screen and (max-width: 999px) {
+  h1 {
+    font-size: 42px;
+    line-height: 62px;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 999px) {
+  h3 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 999px) {
+  h4 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a {
+  color: #636363;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px;
+  border-radius: 10px;
+}
+
+input {
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container.container-flat {
+  padding: 0;
+}
+
+/*
+	Row by default will have all items in 
+	it to be equal width for all widths
+*/
+.row {
+  display: flex;
+  flex-direction: row;
+  /*
+  	Used for when the item is stacked on mobile
+  */
+  /*
+  	Used for when the right hand 
+  	column needs to be on top for mobile
+  */
+  /*
+  	Used for items that will be a grid 
+  	list of 2 items in a row for desktop
+  */
+  /*
+  	Used for if the row shrinks until the column 
+  	reaches a minimum width and then can just be scrolled
+  */
+}
+.row.row--responsive {
+  flex-direction: column;
+}
+@media only screen and (min-width: 1000px) {
+  .row.row--responsive {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .row.row--reverse, .hero--right .row {
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .row.row--grid {
+    flex-wrap: wrap;
+  }
+}
+.row.row--grid .row-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .row.row--grid .row-item {
+    width: 50%;
+  }
+}
+.row.row-scroll {
+  margin: 0 -20px;
+  overflow: auto;
+}
+
+/*
+	Columns in row are equal width
+*/
+.row-item {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+/*
+	Button in header with 3 lines that animates 
+	into an X when the user clicks on it
+*/
+.hamburger-btn {
+  position: relative;
+  width: 24px;
+  height: 16px;
+}
+.hamburger-btn .hamburger-line {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 1;
+  background: #000;
+  transition: all 0.2s ease;
+}
+.hamburger-btn .hamburger-line:nth-of-type(2) {
+  margin-top: -1px;
+  top: 50%;
+}
+.hamburger-btn .hamburger-line:nth-of-type(3) {
+  bottom: 0;
+  top: auto;
+}
+.hamburger-btn.active .hamburger-line, .hamburger-btn.active .hamburger-line:nth-of-type(3) {
+  margin-top: -1px;
+  top: 50%;
+}
+.hamburger-btn.active .hamburger-line:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+.hamburger-btn.active .hamburger-line:nth-of-type(2) {
+  opacity: 0;
+}
+.hamburger-btn.active .hamburger-line:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+
+/*
+	Modal will slide in from left when activated
+*/
+.modal-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  right: 100%;
+  transition: right 0.2s ease;
+  z-index: 97;
+}
+.modal-wrapper.active {
+  right: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .modal-wrapper {
+    display: none;
+  }
+}
+
+/*
+	When mobile menu is active the user cannot scroll up or down page.
+*/
+@media only screen and (max-width: 999px) {
+  body.mobile-menu-active {
+    overflow: hidden;
+    /*
+    	Fixed position added in case user makes window bigger, scrolls down the page 
+    	and then makes window mobile size
+    */
+  }
+  body.mobile-menu-active .alert-ribbon {
+    position: fixed;
+  }
+  body.mobile-menu-active header {
+    position: fixed;
+    top: 40px;
+  }
+  body.mobile-menu-active main {
+    padding-top: 120px;
+  }
+}
+
+/*
+	Menu button is for items that appear in the header bar
+*/
+.menu-button {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 80px;
+  color: #000;
+  font-weight: 700;
+  /*
+  	Dropdown menu appears when hovering on menu button
+  */
+  /*
+  	Aligns the icon image
+  */
+}
+@media only screen and (min-width: 1000px) {
+  .menu-button {
+    line-height: 100px;
+  }
+}
+.menu-button:hover .menu-wrapper, .menu-button:focus .menu-wrapper {
+  opacity: 1;
+  visibility: visible;
+  /* 
+  	Delay only happens on fade out and not fade in.
+  	Delay on fade out makes it more forgiving for moving
+  	the cursor over button to menu
+  */
+  transition-delay: 0s;
+}
+.menu-button > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+	Menu that shows when hovering over button
+*/
+.menu-wrapper {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  width: 100%;
+  background: #FFF;
+  z-index: 99;
+  /* Shadow added to top since dropdown menu will cover the header's shadow */
+  box-shadow: inset 0px 5px 10px -5px #0000001A;
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+  /*
+  	Divider that shows in menu
+  */
+}
+@media only screen and (max-width: 999px) {
+  .menu-wrapper {
+    display: none;
+  }
+}
+.menu-wrapper hr {
+  width: 150px;
+  margin-left: 0;
+  background-color: #E9E9E9;
+  height: 1px;
+  border: none;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+}
+
+.main-menu {
+  width: 30%;
+}
+
+.menu-item {
+  display: block;
+  /*
+  	Focus added to hover for keyboard viewing.
+  	Right hand column shows on hover in CSS instead of using Javascript
+  */
+  /*
+  	Content that shows in right column of dropdown 
+  	when user hovers over link in the left hand column.
+  */
+  /*
+  	Link item in left hand column of dropdown menu
+  */
+}
+.menu-item:hover .menu-item__hover-content, .menu-item:focus .menu-item__hover-content {
+  opacity: 1;
+  z-index: 2;
+}
+.menu-item:hover .menu-item__label, .menu-item:focus .menu-item__label {
+  color: #17A7E0;
+}
+.menu-item:hover .menu-item__label svg, .menu-item:focus .menu-item__label svg {
+  opacity: 1;
+}
+.menu-item .menu-item__hover-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  background: #FFF;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+.menu-item .menu-item__image {
+  flex-grow: 2;
+  background: #E9E9E9;
+  background-size: cover;
+}
+.menu-item .menu-item__blurb {
+  max-width: 460px;
+  line-height: 22px;
+  padding-top: 20px;
+}
+.menu-item .menu-item__label {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  padding: 10px;
+  padding-left: 0;
+  line-height: 22px;
+}
+.menu-item .menu-item__label svg {
+  opacity: 0;
+  margin-left: auto;
+}
+.menu-item .menu-item__label svg path {
+  stroke: #17A7E0;
+}
+
+/*
+	Links divided into 2 menus to be spaced out
+*/
+.main-menu {
+  padding-bottom: 20px;
+}
+
+.secondary-menu {
+  padding-top: 20px;
+}
+
+/*
+	Mobile nav that slides out from left on button click.
+*/
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 120px;
+  height: calc(100% - 120px);
+  background: #FFF;
+  width: 260px;
+  overflow: auto;
+}
+.mobile-nav .main-nav {
+  padding-top: 20px;
+  flex-grow: 2;
+}
+.mobile-nav .bottom-nav {
+  padding-bottom: 20px;
+}
+.mobile-nav a {
+  display: block;
+  line-height: 44px;
+  padding-left: 20px;
+}
+
+/*
+	Alert Ribbon is black strip at top of page
+	Kept as seperate element from header so it's easier to remove if client
+	doesn't wish to have an offer up and to make things easier if implementing
+	a sticky nav bar
+*/
+.alert-ribbon {
+  position: relative;
+  width: 100%;
+  background: #000;
+  color: white;
+  text-align: center;
+  z-index: 3;
+  height: 40px;
+  line-height: 40px;
+  z-index: 99;
+}
+
+/*
+	Breakpoint controlled by seperate variable so easier
+	to adjust if designer wants it changed
+*/
+header {
+  position: relative;
+  width: 100%;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  z-index: 98;
+  box-shadow: 0px 1px 10px 0px #0000001A;
+}
+@media only screen and (min-width: 1000px) {
+  header {
+    height: 100px;
+  }
+}
+
+/*
+	Classes to add for hiding and showing 
+	different buttons for mobile or desktop
+*/
+@media only screen and (max-width: 999px) {
+  .header__btn--desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header__btn--mobile {
+    display: none;
+  }
+}
+
+.header__container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*
+	Header row is wrapper of buttons. Flex properties added
+	so they are equal width with the logo in the middle
+*/
+.header__row {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+/*
+	Left buttons have larger margin for desktop since
+	there are only 2 of them
+*/
+.header__row--left .menu-button {
+  margin-right: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .header__row--left .menu-button {
+    margin-right: 70px;
+  }
+}
+
+.header__row--right {
+  text-align: right;
+}
+.header__row--right .menu-button {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 1400px) {
+  .header__row--right .menu-button {
+    margin-left: 40px;
+  }
+}
+
+/*
+	Search bar slides down from top of header
+	opacity and transform used so it fades in as it drops down
+*/
+.search-modal {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.search-modal.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.search-form input[type=text] {
+  flex-grow: 2;
+  padding: 10px 0 10px 26px;
+  background-image: url("/img/icons/Header/Search.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position-y: 10px;
+  border-bottom: 1px solid #000;
+}
+.search-form .search-close {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .search-form .search-close {
+    margin-left: 40px;
+  }
+}
+
+/*
+	Hero is banner at top of page beneath the header.
+	Default is to have text on top for mobile and left for desktop
+*/
+.hero {
+  position: relative;
+  background: #E9E9E9;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*
+	Makes it so adding one class to HTML will have text/button
+	on the right side and aligned right;
+*/
+@media only screen and (min-width: 1000px) {
+  .hero--right .hero__text {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+/*
+	Text/button will be centered on mobile and 
+	either left or right depending on hero class
+*/
+.hero__text {
+  max-width: 450px;
+  margin: auto;
+}
+@media only screen and (min-width: 1000px) {
+  .hero__text {
+    margin: 0;
+  }
+}
+
+/*
+	Hero image is centered within column and negative
+	margin-bottom makes it cut off for Mobile
+*/
+.hero__image {
+  position: relative;
+  margin: 0 auto;
+  max-width: 450px;
+  margin-bottom: -30%;
+}
+@media only screen and (min-width: 1000px) {
+  .hero__image {
+    margin-bottom: 0;
+  }
+}
+
+/*
+	Section below hero with 3 columns of icon/text
+*/
+.icon-row {
+  padding: 70px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .icon-row {
+    padding: 100px 0;
+  }
+}
+
+/*
+	Content width is 200px and is centered within column
+	if column is bigger. Column won't be smaller than the
+	width of the content
+*/
+.icon-column {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  text-align: center;
+}
+
+.icon-column__img {
+  position: relative;
+  margin: auto;
+  height: 74px;
+  /*
+  	Max height so that the header and text 
+  	in the column will always be aligned.
+  */
+}
+.icon-column__img img {
+  max-height: 100%;
+}
+
+/*
+	Generic CTA element used in multiple sections
+	Generally conists of header, 2 lines of text and button
+*/
+.cta {
+  position: relative;
+  z-index: 2;
+  padding: 50px 20px;
+  text-align: center;
+}
+.cta p {
+  max-width: 220px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/*
+	Refers to section with CTA + product image 
+	on left and full size image on right
+*/
+.cta-image {
+  background: #FAFAFA;
+}
+@media only screen and (min-width: 1000px) {
+  .cta-image {
+    margin: 50px 0;
+  }
+}
+
+/*
+	Width of left hand image 
+	element for 2 image CTA section
+*/
+.cta-2 {
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .cta-2 {
+    padding: 50px 0;
+  }
+}
+.cta-2 .cta-wrapper {
+  position: relative;
+  padding: 30px;
+  z-index: 2;
+  background: #FFFFFF;
+  margin: 0 20px;
+  border-radius: 10px;
+  /*
+  	Position of CTA block calculates the height since it's Header, 2 lines of text and button
+  	Would need to be adjusted if text is lengthened
+
+  	Outer padding (2 x 1.5 padding): 3*$padding
+  	Inner padding: 2 * (2.5 * $padding)
+  	Header line height: 27p
+  	Header margin (Top + Bottom): $padding
+  	2 lines of text: (2 * $body-line-height
+  	Text margin bottom: $padding
+  	Button height: 50px
+
+  	Value is divided by 2 so the top offset is -(total height) / 2
+
+  */
+  top: -160.5px;
+  /* $padding*3.5 is subtracted to account for space at bottom to next section */
+  margin-bottom: -90.5px;
+}
+@media only screen and (min-width: 1000px) {
+  .cta-2 .cta-wrapper {
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 450px;
+    margin: 0 0 0 -225px;
+    left: 40%;
+    top: 0;
+  }
+}
+.cta-2 .cta {
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+}
+
+/*
+	Image is full height of section (CTA + section padding)
+*/
+@media only screen and (min-width: 1000px) {
+  .cta-2__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .cta-2__image.cta-2__image--sm {
+    /* 
+    	Offset subtracted to create $padding width 
+    	space between images and still be centered 
+    */
+    width: calc( 40% - 10px);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .cta-2__image.cta-2__image--lg {
+    width: calc( 60% - 10px);
+    left: calc( 40% + 10px);
+  }
+}
+
+/*
+	Element added within background image wrapper so background image wrapper 
+	has height for mobile. Padding bottom is 100% to create square element
+*/
+.mobile-image-space {
+  /*
+  	Hidden on desktop so background image wrapper is 
+  	height of section and equal height to CTA section
+  */
+}
+.mobile-image-space:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .mobile-image-space {
+    display: none;
+  }
+}
+
+/*
+	Refers to section with CTA + icon columns
+*/
+.columns-cta {
+  background: #E9E9E9;
+  padding: 80px;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .columns-cta {
+    padding: 60px 0;
+  }
+}
+.columns-cta p {
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+/*
+	Button that has product name and image
+*/
+.product-listing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #F2F2F2;
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 1000px) {
+  .product-listing {
+    margin: 5px;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+}
+
+/* part of listing that has text and chevron */
+.product-listing__text {
+  display: flex;
+  flex-grow: 2;
+  padding-right: 20px;
+  width: 150px;
+  /* Just text element. Flex grow makes chevron be aligned in all listings */
+}
+.product-listing__text .product-listing__label {
+  flex-grow: 2;
+}
+
+/* Image is small right aligned for mobile and large and most of block in desktop */
+.product-listing__img {
+  max-width: 100%;
+  height: 150px;
+  width: 210px;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .product-listing__img {
+    width: 100%;
+    height: 400px;
+  }
+}
+.product-listing__img img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* 
+	Seperate images for mobile or desktop used 
+	in case image is recropped for small sizes 
+*/
+@media only screen and (min-width: 1000px) {
+  .product-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .product-big {
+    display: none;
+  }
+}
+
+/*
+	Section at bottom of page with row of awards as images
+*/
+.awards {
+  padding: 50px 0;
+}
+
+/*
+	Images is cenetered within column and has max width
+	padding added so they don't get too close together
+*/
+.award-image {
+  max-width: 80px;
+  margin: auto;
+  padding: 0 10px;
+  display: block;
+}
+@media only screen and (min-width: 1000px) {
+  .award-image {
+    max-width: 120px;
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
