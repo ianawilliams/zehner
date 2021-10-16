@@ -1,0 +1,97 @@
+/*
+	Alert Ribbon is black strip at top of page
+	Kept as seperate element from header so it's easier to remove if client
+	doesn't wish to have an offer up and to make things easier if implementing
+	a sticky nav bar
+*/
+
+.alert-ribbon {
+	position: relative;
+	width: 100%;
+	background: #000;
+	color: white;
+	text-align: center;
+	z-index: 3;
+	height: 40px;
+	line-height: 40px;
+	z-index: 99;
+}
+
+/*
+	Breakpoint controlled by seperate variable so easier
+	to adjust if designer wants it changed
+*/
+header {
+	position: relative;
+	width: 100%;
+	background: #FFF;
+	display: flex;
+	align-items: center;
+	height: 80px;
+	z-index: 98;
+	box-shadow: 0px 1px 10px 0px #0000001A;
+
+	@include larger-than( $bp-header ) {
+		height: 100px;
+	}
+}
+
+/*
+	Classes to add for hiding and showing 
+	different buttons for mobile or desktop
+*/
+.header__btn--desktop {
+	@include smaller-than( $bp-header ) {
+		display: none;
+	}
+}
+
+.header__btn--mobile {
+	@include larger-than( $bp-header ) {
+		display: none;
+	}
+}
+
+.header__container {
+	width: 100%;
+	padding: 0 $padding;
+	display: flex;
+	max-width: $header-width;
+	margin: auto;
+}
+
+/*
+	Header row is wrapper of buttons. Flex properties added
+	so they are equal width with the logo in the middle
+*/
+.header__row {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+
+/*
+	Left buttons have larger margin for desktop since
+	there are only 2 of them
+*/
+.header__row--left {
+	.menu-button {
+		margin-right: $padding;
+
+		@include larger-than( $bp-header ) {
+			margin-right: 3.5*$padding;
+		}
+	}
+}
+
+.header__row--right {
+	text-align: right;
+
+	.menu-button {
+		margin-left: $padding;
+
+		@include larger-than( 1400px ) {
+			margin-left: 2*$padding;
+		}
+	}
+}

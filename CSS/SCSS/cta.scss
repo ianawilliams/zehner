@@ -1,0 +1,155 @@
+/*
+	Generic CTA element used in multiple sections
+	Generally conists of header, 2 lines of text and button
+*/
+.cta {
+	position: relative;
+	z-index: 2;
+	padding: $padding*2.5 $padding;
+	text-align: center;
+
+	p {
+		max-width: 220px;
+		margin: auto;
+		margin-bottom: $padding;
+	}
+}
+
+/*
+	Refers to section with CTA + product image 
+	on left and full size image on right
+*/
+.cta-image {
+	background: $bg-light;
+
+	@include larger-than( $bp-main ) {
+		margin: #{$padding*2.5} 0;
+	}
+}
+
+/*
+	Width of left hand image 
+	element for 2 image CTA section
+*/
+$left-width: 40%;
+
+.cta-2 {
+	position: relative;
+
+	@include larger-than( $bp-main ) {
+		padding: #{$padding*2.5} 0;
+	}
+
+	.cta-wrapper {
+		position: relative;
+		padding: 1.5*$padding;
+		z-index: 2;
+		background: #FFFFFF;
+		margin: 0 $padding;
+		border-radius: 10px;
+		/*
+			Position of CTA block calculates the height since it's Header, 2 lines of text and button
+			Would need to be adjusted if text is lengthened
+
+			Outer padding (2 x 1.5 padding): 3*$padding
+			Inner padding: 2 * (2.5 * $padding)
+			Header line height: 27p
+			Header margin (Top + Bottom): $padding
+			2 lines of text: (2 * $body-line-height
+			Text margin bottom: $padding
+			Button height: 50px
+
+			Value is divided by 2 so the top offset is -(total height) / 2
+
+		*/
+		top: -((2 * (2.5 * $padding)) + (3*$padding) + $padding + 27px + (2 * $body-line-height) + $padding + 50px) / 2;
+
+		/* $padding*3.5 is subtracted to account for space at bottom to next section */
+		margin-bottom: -(((2 * (2.5 * $padding)) + (3*$padding) + $padding + 27px + (2 * $body-line-height) + $padding + 50px) / 2 - $padding*3.5);
+
+		@include larger-than( $bp-main ) {
+			box-sizing: border-box;
+			border-radius: 25px;
+			width: 450px;
+			margin: 0 0 0 -225px;
+			left: $left-width;
+			top: 0;
+		}
+	}
+
+	.cta {
+		border: 1px solid #F2F2F2;
+		border-radius: 10px;
+	}
+}
+
+/*
+	Image is full height of section (CTA + section padding)
+*/
+.cta-2__image {
+	@include larger-than( $bp-main ) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&.cta-2__image--sm {
+		@include larger-than( $bp-main ) {
+			/* 
+				Offset subtracted to create $padding width 
+				space between images and still be centered 
+			*/
+			width: calc( #{$left-width} - #{$padding/2});
+		}
+	}
+
+	&.cta-2__image--lg {
+		@include larger-than( $bp-main ) {
+			width: calc( #{100% - $left-width} - #{$padding/2});
+			left: calc( #{$left-width} + #{$padding/2});
+		}
+	}
+}
+
+/*
+	Element added within background image wrapper so background image wrapper 
+	has height for mobile. Padding bottom is 100% to create square element
+*/
+.mobile-image-space {
+	&:before {
+		content: '';
+		display: block;
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	/*
+		Hidden on desktop so background image wrapper is 
+		height of section and equal height to CTA section
+	*/
+	@include larger-than( $bp-main ) {
+		display: none;
+	}
+}
+
+/*
+	Refers to section with CTA + icon columns
+*/
+.columns-cta {
+	background: $bg-main;
+	padding: 80px;
+	text-align: center;
+
+	@include larger-than( $bp-main ) {
+		padding: 60px 0;
+	}
+
+	p {
+		margin: auto;
+		margin-bottom: 30px;
+		max-width: 450px;
+	}
+}

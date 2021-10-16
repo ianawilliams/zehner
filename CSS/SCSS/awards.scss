@@ -1,0 +1,22 @@
+/*
+	Section at bottom of page with row of awards as images
+*/
+.awards {
+	padding: #{2.5*$padding} 0;
+}
+
+/*
+	Images is cenetered within column and has max width
+	padding added so they don't get too close together
+*/
+.award-image {
+	max-width: 80px;
+	margin: auto;
+	padding: 0 $padding/2;
+    display: block;
+
+    @include larger-than( $bp-main ) {
+    	max-width: 120px;
+    	padding: 0 $padding;
+    }
+}

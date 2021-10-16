@@ -1,0 +1,49 @@
+/*
+	Code pulled from 4moms production site
+*/
+@font-face{
+	font-family:Century Gothic;
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix");
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix") format("embedded-opentype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.woff?v=3303207414467143655") format("woff"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.ttf?5272") format("truetype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+	font-weight:300;
+	font-style:normal;
+}
+
+@font-face{
+	font-family:Century Gothic;
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix");
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.eot?v=15348138648448518257?#iefix") format("embedded-opentype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.woff?v=3303207414467143655") format("woff"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.ttf?5272") format("truetype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	@font-face{
+		font-family:Century Gothic;
+		src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHIC.svg?v=13208668911271165152#GOTHIC") format("svg");
+	}
+}
+
+@font-face{
+	font-family:Century Gothic;
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.eot?v=14242691890273458005?#iefix");
+	src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.eot?v=14242691890273458005?#iefix") format("embedded-opentype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.woff?v=8467630639151127471") format("woff"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.ttf?5272") format("truetype"),
+	url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.svg?v=3788222985331504714#GOTHICB") format("svg");
+	font-weight:700;
+	font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	@font-face{
+		font-family:Century Gothic;
+		src:url("//cdn.shopify.com/s/files/1/0273/2267/9394/t/35/assets/GOTHICB.svg?v=3788222985331504714#GOTHICB") format("svg");
+	}
+}

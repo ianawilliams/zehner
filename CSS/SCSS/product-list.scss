@@ -1,0 +1,68 @@
+/*
+	Button that has product name and image
+*/
+.product-listing {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: #F2F2F2;
+	padding: 0 $padding;
+	margin-bottom: $padding/4;
+
+	@include larger-than( $bp-main ) {
+		margin: $padding/4;
+		flex-direction: column;
+		align-items: baseline;
+		padding: $padding;
+		padding-bottom: 0;
+
+	}
+}
+
+/* part of listing that has text and chevron */
+.product-listing__text {
+	display: flex;
+	flex-grow: 2;
+	padding-right: $padding;
+	width: 150px;
+
+	/* Just text element. Flex grow makes chevron be aligned in all listings */
+	.product-listing__label {
+		flex-grow: 2;
+	}
+}
+
+/* Image is small right aligned for mobile and large and most of block in desktop */
+.product-listing__img {
+	max-width: 100%;
+	height: 150px;
+	width: 210px;
+	text-align: center;
+
+	@include larger-than( $bp-main ) {
+		width: 100%;
+		height: 400px;
+	}
+
+	img {
+		width: auto;
+		height: 100%;
+		max-width: 100%;
+	}
+}
+
+/* 
+	Seperate images for mobile or desktop used 
+	in case image is recropped for small sizes 
+*/
+.product-small {
+	@include larger-than( $bp-main ) {
+		display: none;
+	}
+}
+
+.product-big {
+	@include smaller-than( $bp-main ) {
+		display: none;
+	}
+}

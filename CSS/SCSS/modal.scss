@@ -1,0 +1,101 @@
+/*
+	Button in header with 3 lines that animates 
+	into an X when the user clicks on it
+*/
+.hamburger-btn {
+	position: relative;
+	width: 24px;
+	height: 16px;
+
+	.hamburger-line {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		opacity: 1;
+		background: $primary-color;
+		transition: all $animate-transition;
+
+		&:nth-of-type(2) {
+			margin-top: -1px;
+			top: 50%;
+		}
+
+		&:nth-of-type(3) {
+			bottom: 0;
+			top: auto;
+		}
+	}
+
+	&.active {
+		.hamburger-line {
+			&,
+			&:nth-of-type(3) {
+				margin-top: -1px;
+				top: 50%;
+			}
+
+			&:nth-of-type(1) {
+				transform: rotate(45deg);
+			}
+
+			&:nth-of-type(2) {
+				opacity: 0;
+			}
+
+			&:nth-of-type(3) {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+/*
+	Modal will slide in from left when activated
+*/
+.modal-wrapper {
+	position: fixed;
+	bottom: 0;
+    left: 0;
+    top: 0;
+	overflow: hidden;
+	right: 100%;
+	transition: right $animate-transition;
+	z-index: 97;
+
+	&.active {
+		right: 0;
+	}
+
+	@include larger-than( $bp-header ) {
+		display: none;
+	}
+}
+
+/*
+	When mobile menu is active the user cannot scroll up or down page.
+*/
+body.mobile-menu-active {
+	@include smaller-than( $bp-header ) {
+		overflow: hidden;
+
+		/*
+			Fixed position added in case user makes window bigger, scrolls down the page 
+			and then makes window mobile size
+		*/
+		.alert-ribbon {
+			position: fixed;
+		}
+
+		header {
+			position: fixed;
+			top: 40px;
+		}
+
+		main {
+			padding-top: 120px;
+		}
+	}
+}

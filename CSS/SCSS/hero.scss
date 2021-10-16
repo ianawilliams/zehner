@@ -1,0 +1,55 @@
+/*
+	Hero is banner at top of page beneath the header.
+	Default is to have text on top for mobile and left for desktop
+*/
+.hero {
+	position: relative;
+	background: $bg-main;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*
+	Makes it so adding one class to HTML will have text/button
+	on the right side and aligned right;
+*/
+.hero--right {
+	@include larger-than( $bp-main ) {
+		.hero__text {
+			margin-left: auto;
+			text-align: right;
+		}
+	}
+
+	.row {
+		@extend .row--reverse;
+	}
+}
+
+/*
+	Text/button will be centered on mobile and 
+	either left or right depending on hero class
+*/
+.hero__text {
+	max-width: 450px;
+	margin: auto;
+
+	@include larger-than( $bp-main ) {
+		margin: 0;
+	}
+}
+
+/*
+	Hero image is centered within column and negative
+	margin-bottom makes it cut off for Mobile
+*/
+.hero__image {
+	position: relative;
+	margin: 0 auto;
+	max-width: 450px;
+	margin-bottom: -30%;
+
+	@include larger-than( $bp-main ) {
+		margin-bottom: 0;
+	}
+}

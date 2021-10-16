@@ -1,0 +1,90 @@
+$bp-text: $bp-main;
+
+
+body {
+	font-family: $body-font;
+	color: $text-primary;
+	font-size: $body-font-size;
+	font-weight: 400;
+	line-height: $body-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $header-color;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 42px;
+
+	@include smaller-than( $bp-text ) {
+		font-size: 42px;
+		line-height: 62px;
+	}
+}
+
+h2 {
+
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+
+	@include smaller-than( $bp-text ) {
+		font-size: 25px;
+		line-height: 38px;
+	}
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+
+	@include smaller-than( $bp-text ) {
+		font-size: 22px;
+		line-height: 27px;
+	}
+}
+
+h5 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: $padding/2;
+	margin-top: $padding/2;
+}
+
+a {
+	color: $text-primary;
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	background: $primary-color;
+	color: $text-secondary;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 50px;
+	border-radius: $border-radius;
+
+}
+
+input {
+	border: none;
+}
+
+button {
+	background: none;
+	border: none;
+	border-radius: none;
+	cursor: pointer;
+}

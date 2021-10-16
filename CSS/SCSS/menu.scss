@@ -1,0 +1,200 @@
+/*
+	Menu button is for items that appear in the header bar
+*/
+.menu-button {
+	cursor: pointer;
+	display: inline-block;
+	line-height: 80px;
+	color: $primary-color;
+	font-weight: 700;
+
+	@include larger-than( $bp-header ) {
+		line-height: 100px;
+	}
+
+	/*
+		Dropdown menu appears when hovering on menu button
+	*/
+	&:hover,
+	&:focus {
+		.menu-wrapper {
+			opacity: 1;
+    		visibility: visible;
+    		/* 
+    			Delay only happens on fade out and not fade in.
+    			Delay on fade out makes it more forgiving for moving
+    			the cursor over button to menu
+    		*/
+			transition-delay: 0s;
+		}
+	}
+
+	/*
+		Aligns the icon image
+	*/
+	& > img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+/*
+	Menu that shows when hovering over button
+*/
+.menu-wrapper {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	padding-top: 2*$padding;
+	padding-bottom: 3*$padding;
+	width: 100%;
+	background: #FFF;
+	z-index: 99;
+	/* Shadow added to top since dropdown menu will cover the header's shadow */
+	box-shadow: inset 0px 5px 10px -5px #0000001A;
+	transition: $animate-transition;
+	transition-delay: 0.2s;
+
+	@include smaller-than( $bp-header ) {
+		display: none;
+	}
+
+	/*
+		Divider that shows in menu
+	*/
+	hr {
+		width: 150px;
+		margin-left: 0;
+	    background-color: $bg-main;
+	    height: 1px;
+	    border: none;
+	}
+}
+
+nav {
+	position: relative;
+	width: 100%;
+}
+
+.main-menu {
+	width: 30%;
+}
+
+.menu-item {
+	display: block;
+
+	/*
+		Focus added to hover for keyboard viewing.
+		Right hand column shows on hover in CSS instead of using Javascript
+	*/
+	&:hover,
+	&:focus {
+		.menu-item__hover-content {
+			opacity: 1;
+			z-index: 2;
+		}
+
+		.menu-item__label {
+			color: $secondary-color;
+
+			svg {
+				opacity: 1;
+			}
+		}
+	}
+
+	/*
+		Content that shows in right column of dropdown 
+		when user hovers over link in the left hand column.
+	*/
+	.menu-item__hover-content {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 70%;
+		opacity: 0;
+		background: #FFF;
+		z-index: 1;
+		transition: $animate-transition;
+	}
+
+	.menu-item__image {
+		flex-grow: 2;
+		background: $bg-main;
+		background-size: cover;
+	}
+
+	.menu-item__blurb {
+		max-width: 460px;
+		line-height: 22px;
+		padding-top: $padding;
+	}
+
+	/*
+		Link item in left hand column of dropdown menu
+	*/
+	.menu-item__label {
+		display: flex;
+		align-items: center;
+		width: 150px;
+		padding: $padding/2;
+		padding-left: 0;
+		line-height: $body-line-height;
+
+		svg {
+			opacity: 0;
+			margin-left: auto;
+
+			path {
+				stroke: #17A7E0;
+			}
+		}
+	}
+}
+
+/*
+	Links divided into 2 menus to be spaced out
+*/
+.main-menu {
+	padding-bottom: $padding;
+}
+
+.secondary-menu {
+	padding-top: $padding;
+}
+
+/*
+	Mobile nav that slides out from left on button click.
+*/
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: $padding;
+	// Top padding is height of ribbon + header
+	padding-top: 120px;
+	height: calc(100% - 120px);
+	background: #FFF;
+	width: 260px;
+	overflow: auto;
+
+	.main-nav {
+		padding-top: $padding;
+		flex-grow: 2;
+	}
+
+	.bottom-nav {
+		padding-bottom: $padding;
+	}
+
+	a {
+		display: block;
+		line-height: 44px;
+		padding-left: $padding;
+	}
+}
+

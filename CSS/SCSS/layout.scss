@@ -1,0 +1,76 @@
+.container {
+	position: relative;
+	max-width: $container-max;
+	margin: 0 auto;
+	padding: 0 $padding;
+
+	&.container-flat {
+		padding: 0;
+	}
+}
+
+/*
+	Row by default will have all items in 
+	it to be equal width for all widths
+*/
+.row {
+	display: flex;
+	flex-direction: row;
+
+	/*
+		Used for when the item is stacked on mobile
+	*/
+	&.row--responsive {
+		flex-direction: column;
+
+		@include larger-than( $bp-main ) {
+			flex-direction: row;
+		}
+	}
+
+	/*
+		Used for when the right hand 
+		column needs to be on top for mobile
+	*/
+	&.row--reverse {
+		@include larger-than( $bp-main ) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	/*
+		Used for items that will be a grid 
+		list of 2 items in a row for desktop
+	*/
+	&.row--grid {
+		@include larger-than( $bp-main ) {
+			flex-wrap: wrap;
+		}
+
+		.row-item {
+			flex: 0 0 auto;
+    		width: 100%;
+
+    		@include larger-than( $bp-main ) {
+    			width: 50%;
+    		}
+		}
+	}
+
+	/*
+		Used for if the row shrinks until the column 
+		reaches a minimum width and then can just be scrolled
+	*/
+	&.row-scroll {
+		margin: 0 #{-$padding};
+		overflow: auto;
+	}
+}
+
+/*
+	Columns in row are equal width
+*/
+.row-item {
+	flex-grow: 1;
+	flex-basis: 0;
+}

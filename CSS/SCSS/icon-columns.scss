@@ -1,0 +1,36 @@
+/*
+	Section below hero with 3 columns of icon/text
+*/
+.icon-row {
+	padding: 70px 0;
+
+	@include larger-than( $bp-main ) {
+		padding: 100px 0;
+	}
+}
+
+/*
+	Content width is 200px and is centered within column
+	if column is bigger. Column won't be smaller than the
+	width of the content
+*/
+.icon-column {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	text-align: center;
+}
+
+.icon-column__img {
+	position: relative;
+	margin: auto;
+	height: 74px;
+
+	/*
+		Max height so that the header and text 
+		in the column will always be aligned.
+	*/
+	img {
+		max-height: 100%;
+	}
+}

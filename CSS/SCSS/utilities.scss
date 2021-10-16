@@ -1,0 +1,22 @@
+.ul-unstyled {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.hide-desktop {
+	@include larger-than( $bp-main ) {
+		display: none;
+	}
+}
+
+.hide-mobile {
+	@include smaller-than( $bp-main ) {
+		display: none;
+	}
+}
+
+.image-cover {
+	background-size: cover;
+	background-position: center center;
+}
