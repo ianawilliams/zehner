@@ -95,3 +95,11 @@ header {
 		}
 	}
 }
+
+.header__logo {
+	width: 110px;
+
+	@include larger-than( $bp-header ) {
+		width: auto;
+	}
+}
