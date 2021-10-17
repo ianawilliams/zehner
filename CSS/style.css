@@ -935,6 +935,15 @@ header {
   }
 }
 
+.header__logo {
+  width: 110px;
+}
+@media only screen and (min-width: 1000px) {
+  .header__logo {
+    width: auto;
+  }
+}
+
 /*
 	Search bar slides down from top of header
 	opacity and transform used so it fades in as it drops down
@@ -965,7 +974,7 @@ header {
 .search-form input[type=text] {
   flex-grow: 2;
   padding: 10px 0 10px 26px;
-  background-image: url("/img/icons/Header/Search.svg");
+  background-image: url("img/icons/Header/Search.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position-y: 10px;
