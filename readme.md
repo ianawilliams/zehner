@@ -10,7 +10,7 @@ CSS was compiled by
 cd CSS
 sass --watch SCSS/index.scss style.css
 ```
-# Note
+# Notes
 - I didn't comment the HTML since it's one big file but explanations for layout are in the SCSS files.
 - Normally some kind of template library is used (or even just be PHP) to divide HTML into easier to understand files
 - SVG icons are done mostly with img tags to simplify coding/HTML file but usually I load the SVG code into the page with some kind of get contents function since having the SVG code in the page allows for CSS effects
