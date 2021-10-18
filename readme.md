@@ -14,7 +14,7 @@ sass --watch SCSS/index.scss style.css
 - I didn't comment the HTML since it's one big file but explanations for layout are in the SCSS files.
 - Normally some kind of template library is used (or even just be PHP) to divide HTML into easier to understand files
 - SVG icons are done mostly with img tags to simplify coding/HTML file but usually I load the SVG code into the page with some kind of get contents function since having the SVG code in the page allows for CSS effects
-
+- CSS would normally be minified on compile
 
 # Layout
 I tried to focus on getting as much done for showing client a prototype. I didn't think I would get to the footer and didn't know what the break points would be for the footer's column system. Without the footer, the design either shows everything in 2 columns that stack on mobile or stays in a horizontal line. Since I didn't know specific break points I created a row system that would automatically have every item in the row be equal width instead of a traditional 12 column grid system (which can be created relatively simply with mixins).
